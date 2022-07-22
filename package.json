@@ -1,0 +1,23 @@
+{
+  "name": "tpl-oreilly",
+  "version": "0.1.0",
+  "description": "O'Reilly Learning Access Helper for TPL",
+  "scripts": {
+    "start": "parcel watch src/manifest.json --host localhost",
+    "build": "parcel build src/manifest.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist .parcel-cache"
+  },
+  "keywords": [
+    "tpl",
+    "oreilly",
+    "ezproxy"
+  ],
+  "author": "HillcrestEnigma",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/config-webextension": "^2.6.2",
+    "@types/chrome": "^0.0.193",
+    "parcel": "^2.6.2"
+  }
+}

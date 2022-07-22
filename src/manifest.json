@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "TPL O'Reilly",
+  "version": "0.1.0",
+  "permissions": ["storage", "tabs", "webRequest"],
+  "host_permissions": ["https://*.ezproxy.torontopubliclibrary.ca/*"],
+  "background": {
+    "service_worker": "background.ts",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Login into TPL O'Reilly"
+  },
+  "options_ui": {
+    "page": "options/index.html",
+    "open_in_tab": false
+  }
+}
