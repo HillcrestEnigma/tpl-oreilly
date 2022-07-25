@@ -2,22 +2,27 @@
 <html>
 
 <head>
-  <title>O'Reilly TPL Options</title>
+  <title>TPL O'Reilly Options</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h3>O'Reilly TPL Options</h3>
+  <h3>Credentials</h3>
+  <div class="faint">Your login is stored locally.</div>
 
-  <label for="userId">Library card number:</label><br>
-  <input type="tel" id="userId" name="userId" /><br>
+  <form>
+    <label for="userId">Library card number:</label><br>
+    <input type="tel" id="userId" name="userId" /><br>
 
-  <label for="password">Password:</label><br>
-  <input type="password" id="password" name="password" /><br><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" /><br>
+    </form>
+    
+    <div id="error"></div>
 
-  <div id="status"></div>
   <button id="save">Save</button>
 
-  <script src="script.ts" defer></script>
+  <script src="script.ts" type="module" defer></script>
 </body>
 
 </html>

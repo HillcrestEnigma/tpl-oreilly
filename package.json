@@ -17,7 +17,11 @@
   "license": "MIT",
   "devDependencies": {
     "@parcel/config-webextension": "^2.6.2",
+    "@parcel/transformer-inline-string": "^2.6.2",
     "@types/chrome": "^0.0.193",
     "parcel": "^2.6.2"
+  },
+  "dependencies": {
+    "async-mutex": "^0.3.2"
   }
 }

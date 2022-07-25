@@ -1,0 +1,13 @@
+{
+  "include": [
+    "src/**/*",
+  ],
+  "compilerOptions": {
+    "target": "es2022",
+    "strict": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "moduleResolution": "node"
+  },
+}

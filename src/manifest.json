@@ -1,15 +1,22 @@
 {
   "manifest_version": 3,
   "name": "TPL O'Reilly",
+  "description": "Keeps you logged into O'Reilly Learning through Toronto Public Library",
   "version": "0.1.0",
-  "permissions": ["storage", "tabs", "webRequest"],
+  "icons": {
+    "16": "icons/16.png",
+    "32": "icons/32.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "permissions": ["storage", "tabs", "webRequest", "scripting"],
   "host_permissions": ["https://*.ezproxy.torontopubliclibrary.ca/*"],
+  "action": {
+    "default_title": "Login into TPL O'Reilly"
+  },
   "background": {
     "service_worker": "background.ts",
     "type": "module"
-  },
-  "action": {
-    "default_title": "Login into TPL O'Reilly"
   },
   "options_ui": {
     "page": "options/index.html",
